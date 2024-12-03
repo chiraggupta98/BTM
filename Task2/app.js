@@ -155,3 +155,12 @@ tag3.addEventListener('mouseover', function() {
         });
     }
 });
+
+
+function loadContent() {
+    fetch('product.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('boxes01').innerHTML = data;
+      });
+  }
