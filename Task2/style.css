@@ -222,11 +222,15 @@ li{
 .aboutuse{
     display:flex;
 }
+/* .aboutuse>img{
+    height:100px;
+} */
 .otherRecommendation{
     /* background-color:cornflowerblue; */
     background-color: rgb(115, 212, 251);
     width: 990px;
-    height:1028px;
+    /* height:1028px; */
+    height:1029px;
 }
 .otherRecommendation>h4{
     margin-left:140px;
@@ -236,7 +240,7 @@ li{
 .recommendedImage{
     margin-left:60px;
     margin-top:20px;
-    height:450px;
+    height:470px;
     width:350px;
     background-color: cyan;
     border-radius: 20px 30px;
@@ -269,5 +273,9 @@ li{
 }
 
 .fixedimage>img{
-    max-height:350px;
+    max-height:550px;
+}
+#product{
+    margin-left:600px;
+
 }
