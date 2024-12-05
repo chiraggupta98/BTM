@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <div id="preloader"></div>
+
+    <div id="cursor"></div>
+    <div id="cursorblur"></div>
+    <nav id="nav">
+      <div class="imageset">
+          <img
+            src="Alexa5.png"
+            alt="logo"
+          />
+          <img class="alexa-img" src="AlexaImage.png" alt="logo">
+      </div>
+      <div class="navigation">
+        <h4>Home</h4>
+        <h4>Docs</h4>
+        <h4>Signup</h4>
+        <h4>Login</h4>
+        <h4>About</h4>
+      </div>
+    </nav>
+    <video autoplay loop muted src="./backgroundvideo1.mp4"></video>
+    <div id="main">
+      <div id="page1">
+        <h1>ALEXA</h1>
+        <h2>Hey there! How can I help you today?</h2>
+        <p>
+            Discover a world of possibilities with your personal assistant! I can help with everything from setting reminders and managing your calendar to controlling smart home devices and answering your questions. Just ask me anything, and let’s make your day easier together!
+        </p>
+        <div class="alexa-btn">
+          <div class="alexa-button">
+            <button id="start"> Hey ! Alexa </button>
+            <!-- <video autoplay loop muted src="https://i.pinimg.com/originals/a4/31/98/a43198b77091def1e8cf21e24ecb608b.gif"></video> -->
+            <p id="transcript"></p>
+
+          </div>
+      </div>
+      </div>
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>FAST</h4>
+            <h4>SMART</h4>
+            <h4>FRIENDLY</h4>
+            <h4>CLEVER</h4>
+            <h4>TRUSTED</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>FAST</h4>
+            <h4>SMART</h4>
+            <h4>FRIENDLY</h4>
+            <h4>CLEVER</h4>
+            <h4>TRUSTED</h4>
+          </div>
+        </div>
+        <div id="about-us">
+          <img src="Alexa3.jpg" alt="">
+          <div id="about-us-in">
+            <h3>ABOUT US</h3>
+            <p>I simplify your daily life with features like effortless scheduling, smart home control, and music playback. I provide real-time information on weather, news, and traffic to keep you informed. Need a timer or a shopping list? Just ask! My intuitive interface and personalized interactions ensure a convenient and enjoyable experience tailored to your needs.</p>
+          </div>
+          <img src="Alexa4.jpg" alt="">
+        </div>
+        <div id="cards-container">
+          <div class="cards" id="card1"></div>
+          <div class="cards" id="card2"></div>
+          <div class="cards" id="card3"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- <footer class="footer">
+      <div class="footer-content">
+          <div class="quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#about">About Alexa</a></li>
+                  <li><a href="#privacy">Privacy Policy</a></li>
+                  <li><a href="#terms">Terms of Service</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+              </ul>
+          </div>
+          <div class="social-media">
+              <h3>Follow Us</h3>
+              <a href="#" class="social-icon">Twitter</a>
+              <a href="#" class="social-icon">LinkedIn</a>
+          </div>
+          <div class="newsletter">
+              <h3>Newsletter Signup</h3>
+              <form>
+                  <input type="email" placeholder="Your email" required>
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+          <div class="resources">
+              <h3>Alexa Resources</h3>
+              <ul>
+                  <li><a href="#developer">Developer Resources</a></li>
+                  <li><a href="#support">Support</a></li>
+              </ul>
+          </div>
+          <div class="legal">
+              <p>This website is not affiliated with Amazon.com, Inc. or its Alexa services.</p>
+              <p>© 2024 ALEXA. All rights reserved.</p>
+          </div>
+      </div>
+  </footer> -->
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+   <!-- <script type="module" src="speech.js"></script> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      ></script>
+      <script src="script.js"></script>
+      
+      <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+          loader.style.display = "none";
+      });
+      </script>
+      
+  </body>
+</html>

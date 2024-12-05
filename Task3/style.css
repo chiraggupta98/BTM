@@ -1,0 +1,483 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital;1,900&display=swap'); */
+
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#preloader{
+  background: #000 url("https://cdn.dribbble.com/users/317463/screenshots/3080149/media/14766115bd044fe44d6df290fe760ca3.gif") no-repeat center center;
+  background-size:15%;
+  height:100vh;
+  width:100%;
+  position:fixed;
+  z-index:100; 
+  
+}
+
+
+#cursor{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(29, 165, 228);
+  z-index: 99;
+  position: fixed;
+  display: none;
+}
+#cursorblur{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: rgba(54, 161, 218, 0.429);
+  z-index: 9;
+  filter: blur(80px);
+  position: fixed;
+}
+#nav{
+  height: 145px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 150px;
+  gap: 80px;
+  font-weight: 500;
+  position: fixed;
+  z-index: 300;
+}
+.navigation{
+  display:flex;
+  justify-content: space-evenly;
+  width: 60%;
+  gap: 20px;
+}
+#nav img{
+  height: 75px;
+}
+#nav h4{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#main{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.37);
+
+}
+video{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ position: fixed;
+ z-index: -1;
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.alexa-btn{
+  z-index: 200;
+  cursor: pointer;
+}
+#page1 h1:before{
+  content:"ALEXA";
+  position: absolute;
+  color: black;
+  top: -6px;
+  left: -6px;
+  -webkit-text-stroke: 3px rgb(29, 165, 228);
+  z-index: -1;
+}
+#page1 h1{
+  font-size: 140px;
+  font-weight: 800;
+  position: relative;
+  z-index: 10;
+  letter-spacing: 20px;
+}
+#page1 h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0 20px 0;
+}
+#page1 p{
+  font-size: 17px;
+  word-spacing: 5px;
+  font-weight: 500;
+  width: 40%;
+  line-height: 1.9rem;
+  color:rgba(185, 185, 185, 0.91);
+}
+#start{
+
+ padding: 5px 10px;
+ font-size: 20px;
+ font-weight: 800;
+ color: white;
+ /* background-color:rgb(29, 165, 228) ; */
+ background: linear-gradient(90deg,blue,skyblue);
+ border: none;
+ border-radius: 10px;
+ margin-top: 20px;
+ z-index: 300;
+ cursor: pointer;
+
+}
+#transcript {
+  font-size: 20px;
+  color: black;
+
+}
+#page2{
+  min-height: 100vh;
+  width: 100%;
+}
+#scroller{
+  white-space: nowrap;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+  display: none;
+}
+#scroller-in{
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 25s linear  infinite ;
+}
+#scroller h4{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 900;
+  color: transparent;
+  transition: all linear 0.5s;
+  -webkit-text-stroke: 3px yellowgreen;
+  margin-right: 60px;
+}
+#scroller h4:hover{
+  color: greenyellow;
+}
+#about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  gap: 65px;
+  text-align: center;
+  /* margin-top: 40px; */
+}
+#about-us img{
+  height: 230px;
+  width: 230px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+}
+#about-us-in {
+  width: 45%;
+}
+#about-us-in h3{
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+#about-us-in p{
+  line-height: 30px;
+  font-size: 22px;
+  
+}
+#cards-container{
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+.cards{
+  height: 70%;
+  width: 20%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  background-size: cover;
+  background-position: center;
+}
+.imageset{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 10px;
+  width: 10px;
+  align-items: center;
+  /* background:radial-gradient(black 30%,white); */
+  box-shadow: 5px 1px 70px 30px blue;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.alexa-img{
+  position: relative;
+  bottom: 30px;
+  width: 90px;
+}
+
+
+
+#card1{
+  background-image: url("https://hackaday.com/wp-content/uploads/2016/12/amazon-echo-data-warrant-thumb.jpg?w=600&h=600");
+}
+#card2{
+  background-image: url("https://helios-i.mashable.com/imagery/articles/0511uKmwUjAsuTELrIWsfL7/hero-image.fill.size_1200x675.v1624644187.jpg");
+}
+#card3{
+  background-image: url("https://th.bing.com/th/id/OIP.sffxlq2mm3xrlCLuJkv4MQHaEc?w=1000&h=600&rs=1&pid=ImgDetMain");
+}
+
+
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* fsdfsdfs */
+
+
+
+
+
+.chat-container{
+  width: 100%;
+  height: 80%;
+  background-color: rgb(45, 52, 59);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  font-size: 20px;
+  overflow: auto;
+}
+.user-chat-box{
+  width: 60%;
+  position: relative;
+  left:40%;
+}
+.ai-chat-box{
+  padding:0 10px;
+  width: fit-content;
+  font-size: 17px;
+  width: 500px;
+  position: relative;
+}
+.user-chat-area{
+  width: 90%;
+  padding: 20px;
+  background-color: black;
+  color:rgba(255, 255, 255, 0.639);
+  border-radius: 40px 0px 40px 40px;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  gap:10px;
+  flex-direction: column;
+}
+.chooseimg{
+  width: 30%;
+  border-radius: 30px;
+}
+.ai-chat-area{
+  width: 90%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.361);
+  position: relative;
+  left:10%;
+  color:rgba(255, 255, 255, 0.639);
+  border-radius: 0px 40px 40px 40px;
+  box-shadow: 2px 2px 10px black;
+}
+#userImage{
+  position: absolute;
+  right: 0;
+  filter:drop-shadow( 2px 2px 10px black);
+
+}
+#aiImage{
+  position: absolute;
+left:0;
+filter:drop-shadow( 2px 2px 10px black);
+}
+.prompt-area{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(45, 52, 59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px
+}
+.prompt-area input{
+  width: 50%;
+  height: 80px;
+  background-color: black;
+  outline: none;
+  border:none;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 2px 2px 10px black;
+}
+.prompt-area button{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: black;
+  border:none;
+  box-shadow: 2px 2px 10px black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.prompt-area button:hover{
+  background-color: rgba(0, 0, 0, 0.338);
+}
+.load{
+  filter:drop-shadow( 2px 2px 10px black)
+}
+.choose{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:600px) {
+  .user-chat-box{
+      width: 80%;
+      left:20%
+  }
+  .ai-chat-box{
+      width: 80%;
+  }
+  
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: relative;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer a {
+  color: #FF9900; /* Amazon orange */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer button {
+  padding: 10px;
+  background-color: #FF9900;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #FFA500;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
