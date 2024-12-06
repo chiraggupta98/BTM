@@ -209,7 +209,9 @@ let imagebtn=document.querySelector("#image")
 let image=document.querySelector("#image img")
 let imageinput=document.querySelector("#image input")
 
-const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBpDvqGgy9RSDOPBk3OFo3mGZ4vAYo29u8"
+
+  // uncomment this line to run code
+// const Api_Url="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBpDvqGgy9RSDOPBk3OFo3mGZ4vAYo29u8"
 
 let user={
     message:null,
